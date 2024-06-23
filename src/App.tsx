@@ -4,6 +4,8 @@ import { Main } from "./Pages/main";
 import {Login} from "./Pages/login";
 import { Navbar } from './Components/navbar';
 
+
+
 function App() {
   return <div className='App'>
       <Router>
@@ -11,7 +13,7 @@ function App() {
         <Routes>
           <Route path = "/" element={ <Main /> } />
           <Route path ="/login" element={<Login/>} />
-
+          console.log(first)
         </Routes>
       </Router>
 
