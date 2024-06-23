@@ -3,6 +3,8 @@ import {BrowserRouter as Router, Route,Routes} from "react-router-dom";
 import { Main } from "./Pages/main";
 import {Login} from "./Pages/login";
 import { Navbar } from './Components/navbar';
+import { CreatePost } from './Pages/create-post/create-post';
+
 
 
 
@@ -12,8 +14,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path = "/" element={ <Main /> } />
-          <Route path ="/login" element={<Login/>} />
-          console.log(first)
+          <Route path ="/login" element={<Login />} />
+          <Route path ="/createpost" element={<CreatePost />} />
+         
         </Routes>
       </Router>
 
