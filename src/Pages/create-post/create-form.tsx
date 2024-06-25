@@ -22,7 +22,7 @@ export const CreateForm = () => {
         description : yup.string().required("You must add description"),
     });
 
-    const {register,handleSubmit,formState:{errors}}=useForm <createFormData>({
+    const {register,handleSubmit,formState:{errors}} = useForm <createFormData>({
         resolver : yupResolver(schema),
 
     });
